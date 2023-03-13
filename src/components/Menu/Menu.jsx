@@ -112,7 +112,7 @@ function Menu(props) {
             PMD
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button sx={{ color: '#000' }}>
+            <Button sx={{ color: '#000', mx: 1 }}>
               <Link
                 activeClass="active"
                 to="#"
@@ -124,7 +124,7 @@ function Menu(props) {
                 Home
               </Link>
             </Button>
-            <Button sx={{ color: '#000' }}>
+            <Button sx={{ color: '#000', mx: 1 }}>
               <Link
                 activeClass="active"
                 to="projects"
@@ -136,7 +136,7 @@ function Menu(props) {
                 Projects
               </Link>
             </Button>
-            <Button sx={{ color: '#000' }}>
+            <Button sx={{ color: '#000', mx: 1 }}>
               <Link
                 activeClass="active"
                 to="about"
@@ -148,7 +148,7 @@ function Menu(props) {
                 About
               </Link>
             </Button>
-            <Button sx={{ color: '#000' }}>
+            <Button sx={{ color: '#000', mx: 1 }}>
               <Link
                 activeClass="active"
                 to="contact"
