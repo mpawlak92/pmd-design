@@ -5,9 +5,9 @@ function App() {
     <div className="App">
       <Menu />
       <Section id="#" name="heroImg" />
-      <Section id="projects" color="red" />
-      <Section id="about" />
-      <Section id="contact" color="red" />
+      <Section id="projects" name="projects" />
+      <Section id="about" name="about" />
+      <Section id="contact" name="contact" />
     </div>
   )
 }
