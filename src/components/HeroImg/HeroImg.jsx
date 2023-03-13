@@ -8,37 +8,39 @@ export default function HeroImg() {
     <>
       <Box
         sx={{
+          position: 'relative',
           width: '90%',
-          height: '90vh',
+          height: '80vh',
+          mt: 8,
           backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          position: 'relative',
           zIndex: 0,
         }}
       />
       <Box
         sx={{
-          width: '90%',
-          height: '90vh',
           position: 'absolute',
-          color: 'black',
+          width: '90%',
+          height: '80vh',
+          mt: 8,
           bgcolor: 'rgb(0,0,0,0.7)',
+          color: 'black',
           zIndex: 5,
         }}
       />
       <Box
         sx={{
-          width: '90%',
-          height: '90vh',
           position: 'absolute',
-          zIndex: 11,
           display: 'flex',
           direction: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+          width: '90%',
+          height: '80vh',
+          mt: 8,
           color: 'white',
-          //   spacing={2}
+          zIndex: 11,
         }}
       >
         <Stack
