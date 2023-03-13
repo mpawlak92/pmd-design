@@ -2,6 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
 import HeroImg from '../HeroImg/HeroImg'
+import Projects from '../Projects/Projects'
 
 export default function Section(props) {
   const { id, name } = props
@@ -18,6 +19,7 @@ export default function Section(props) {
         }}
       >
         {name === 'heroImg' && <HeroImg />}
+        {name === 'projects' && <Projects />}
       </Box>
     </>
   )
