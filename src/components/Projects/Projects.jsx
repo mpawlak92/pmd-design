@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react'
 import projImg1 from '../../img/proj1.jpg'
 import projImg2 from '../../img/proj2.jpg'
 import projImg3 from '../../img/proj3.jpg'
@@ -10,6 +10,77 @@ import projImg8 from '../../img/proj8.jpg'
 import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
 
 export default function Projects() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const projectsGallery = () => {
+    if (windowWidth <= 600) {
+      return (
+        <ImageList sx={{ width: '90%' }} variant="woven" cols={1} gap={0}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=161&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      )
+    } else if (windowWidth > 600 && windowWidth <= 900) {
+      return (
+        <ImageList sx={{ width: '90%' }} variant="woven" cols={2} gap={50}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=161&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      )
+    } else if (windowWidth > 900 && windowWidth <= 1200) {
+      return (
+        <ImageList sx={{ width: '90%' }} variant="woven" cols={3} gap={50}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=161&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      )
+    } else if (windowWidth > 1200) {
+      return (
+        <ImageList sx={{ width: '90%' }} variant="woven" cols={4} gap={80}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=161&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      )
+    }
+  }
   return (
     <>
       <Box
@@ -17,7 +88,7 @@ export default function Projects() {
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
-          my: { xs: 8, sm: 9 },
+          my: { xs: 9, sm: 10 },
         }}
       >
         <Typography variant="h2">My Projects</Typography>
@@ -30,18 +101,7 @@ export default function Projects() {
           mb: { xs: 7, sm: 8 },
         }}
       >
-        <ImageList sx={{ width: '90%' }} variant="woven" cols={4} gap={100}>
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img
-                src={`${item.img}?w=161&fit=crop&auto=format`}
-                srcSet={`${item.img}?w=161&fit=crop&auto=format&dpr=2 2x`}
-                alt={item.title}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+        {projectsGallery()}
       </Box>
     </>
   )
