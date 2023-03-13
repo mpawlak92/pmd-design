@@ -10,12 +10,11 @@ export default function Section(props) {
       <Box
         id={id}
         sx={{
-          width: '100%',
-          height: '100vh',
-          backgroundColor: 'white',
           display: 'flex',
+          flexWrap: 'wrap',
           justifyContent: 'center',
-          alignItems: 'center',
+          width: '100%',
+          backgroundColor: 'white',
         }}
       >
         {name === 'heroImg' && <HeroImg />}

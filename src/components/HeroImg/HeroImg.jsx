@@ -10,8 +10,8 @@ export default function HeroImg() {
         sx={{
           position: 'relative',
           width: '90%',
-          height: '80vh',
-          mt: 8,
+          height: '90vh',
+          my: { xs: 7, sm: 8 },
           backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
@@ -22,8 +22,8 @@ export default function HeroImg() {
         sx={{
           position: 'absolute',
           width: '90%',
-          height: '80vh',
-          mt: 8,
+          height: '90vh',
+          my: { xs: 7, sm: 8 },
           bgcolor: 'rgb(0,0,0,0.7)',
           color: 'black',
           zIndex: 5,
@@ -37,8 +37,8 @@ export default function HeroImg() {
           justifyContent: 'center',
           alignItems: 'center',
           width: '90%',
-          height: '80vh',
-          mt: 8,
+          height: '90vh',
+          my: { xs: 7, sm: 8 },
           color: 'white',
           zIndex: 11,
         }}
