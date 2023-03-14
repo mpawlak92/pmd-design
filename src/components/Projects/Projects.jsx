@@ -66,7 +66,7 @@ export default function Projects() {
       )
     } else if (windowWidth > 1200) {
       return (
-        <ImageList sx={{ width: '90%' }} variant="woven" cols={4} gap={80}>
+        <ImageList sx={{ width: '90%' }} variant="woven" cols={4} gap={70}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -97,7 +97,7 @@ export default function Projects() {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          width: '100%',
+          width: '90%',
           mb: { xs: 7, sm: 8 },
         }}
       >

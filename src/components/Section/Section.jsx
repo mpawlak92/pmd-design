@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Box from '@mui/material/Box'
 import HeroImg from '../HeroImg/HeroImg'
 import Projects from '../Projects/Projects'
+import AboutMe from '../AboutMe/AboutMe'
 
 export default function Section(props) {
   const { id, name } = props
@@ -20,6 +21,7 @@ export default function Section(props) {
       >
         {name === 'heroImg' && <HeroImg />}
         {name === 'projects' && <Projects />}
+        {name === 'about' && <AboutMe />}
       </Box>
     </>
   )
