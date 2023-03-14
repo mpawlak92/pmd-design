@@ -112,54 +112,49 @@ function Menu(props) {
             PMD
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button sx={{ color: '#000', mx: 1 }}>
-              <Link
-                activeClass="active"
-                to="#"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Home
-              </Link>
-            </Button>
-            <Button sx={{ color: '#000', mx: 1 }}>
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </Button>
-            <Button sx={{ color: '#000', mx: 1 }}>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                About
-              </Link>
-            </Button>
-            <Button sx={{ color: '#000', mx: 1 }}>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </Button>
+            <Link
+              activeClass="active"
+              to="#"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <Button sx={{ color: '#000', mx: 1 }}>Home</Button>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <Button sx={{ color: '#000', mx: 1 }}>Projects</Button>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <Button sx={{ color: '#000', mx: 1 }}>About</Button>
+            </Link>
+
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <Button sx={{ color: '#000', mx: 1 }}>Contact</Button>
+            </Link>
           </Box>
         </Toolbar>
       </AppBar>
