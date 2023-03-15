@@ -88,7 +88,7 @@ export default function Projects() {
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
-          my: { xs: 9, sm: 10 },
+          my: { xs: 5, sm: 10 },
         }}
       >
         <Typography variant="h2">My Projects</Typography>
@@ -98,7 +98,6 @@ export default function Projects() {
           display: 'flex',
           justifyContent: 'center',
           width: '90%',
-          mb: { xs: 7, sm: 8 },
         }}
       >
         {projectsGallery()}

@@ -10,7 +10,7 @@ export default function AboutMe() {
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
-          mt: { xs: 0, sm: 10 },
+          mt: { xs: 5, sm: 10 },
           mb: { xs: 5, sm: 0 },
         }}
       >
