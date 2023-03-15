@@ -9,8 +9,11 @@ export default function HeroImg() {
       <Box
         sx={{
           position: 'relative',
-          width: '90%',
-          height: '90vh',
+          width: { xs: '100%', sm: '90%' },
+          height: {
+            xs: 'calc(100vh - 56px)',
+            sm: 'calc((100vh - 56px) - 5vw)',
+          },
           mt: { xs: 7, sm: 8 },
           backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
@@ -21,8 +24,11 @@ export default function HeroImg() {
       <Box
         sx={{
           position: 'absolute',
-          width: '90%',
-          height: '90vh',
+          width: { xs: '100%', sm: '90%' },
+          height: {
+            xs: 'calc(100vh - 56px)',
+            sm: 'calc((100vh - 56px) - 5vw)',
+          },
           mt: { xs: 7, sm: 8 },
           bgcolor: 'rgb(0,0,0,0.7)',
           color: 'black',
@@ -36,8 +42,11 @@ export default function HeroImg() {
           direction: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          width: '90%',
-          height: '90vh',
+          width: { xs: '100%', sm: '90%' },
+          height: {
+            xs: 'calc(100vh - 56px)',
+            sm: 'calc((100vh - 56px) - 5vw)',
+          },
           mt: { xs: 7, sm: 8 },
           color: 'white',
           zIndex: 11,
