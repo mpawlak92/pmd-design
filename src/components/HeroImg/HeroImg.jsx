@@ -58,8 +58,23 @@ export default function HeroImg() {
           alignItems="center"
           spacing={2}
         >
-          <Typography variant="h1">pmd - design</Typography>
-          <Typography variant="h4"> We can do everything!</Typography>
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { xs: '300%', sm: '400%', md: '500%' },
+            }}
+          >
+            pmd - design
+          </Typography>
+          <Typography
+            variant="h2"
+            sx={{
+              fontSize: { xs: '120%', sm: '150%', md: '200%' },
+            }}
+          >
+            {' '}
+            We can do everything!
+          </Typography>
         </Stack>
       </Box>
     </>
