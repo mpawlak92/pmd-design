@@ -14,7 +14,7 @@ export default function AboutMe() {
           mb: { xs: 5, sm: 0 },
         }}
       >
-        <Typography variant="h2">About me</Typography>
+        <Typography variant="h2">O mnie</Typography>
       </Box>
       <Box
         sx={{
@@ -42,7 +42,7 @@ export default function AboutMe() {
               my: { xs: 2, sm: 3 },
             }}
           >
-            My Design Philosophy
+            Czym dla mnie jest Design?
           </Typography>
           <Typography
             variant="body1"

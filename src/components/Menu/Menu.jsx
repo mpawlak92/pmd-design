@@ -120,7 +120,7 @@ function Menu(props) {
               offset={0}
               duration={500}
             >
-              <Button sx={{ color: '#000', mx: 1 }}>Home</Button>
+              <Button sx={{ color: '#000', mx: 1 }}>Stron główna</Button>
             </Link>
 
             <Link
@@ -131,7 +131,7 @@ function Menu(props) {
               offset={0}
               duration={500}
             >
-              <Button sx={{ color: '#000', mx: 1 }}>Projects</Button>
+              <Button sx={{ color: '#000', mx: 1 }}>Projekty</Button>
             </Link>
 
             <Link
@@ -142,7 +142,7 @@ function Menu(props) {
               offset={0}
               duration={500}
             >
-              <Button sx={{ color: '#000', mx: 1 }}>About</Button>
+              <Button sx={{ color: '#000', mx: 1 }}>O mnie</Button>
             </Link>
 
             <Link
@@ -153,7 +153,7 @@ function Menu(props) {
               offset={0}
               duration={500}
             >
-              <Button sx={{ color: '#000', mx: 1 }}>Contact</Button>
+              <Button sx={{ color: '#000', mx: 1 }}>Kontakt</Button>
             </Link>
           </Box>
         </Toolbar>

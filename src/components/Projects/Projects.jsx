@@ -91,7 +91,7 @@ export default function Projects() {
           my: { xs: 5, sm: 10 },
         }}
       >
-        <Typography variant="h2">My Projects</Typography>
+        <Typography variant="h2">Moje Projekty</Typography>
       </Box>
       <Box
         sx={{

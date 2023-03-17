@@ -30,7 +30,7 @@ export default function HeroImg() {
             sm: 'calc((100vh - 56px) - 5vw)',
           },
           mt: { xs: 7, sm: 8 },
-          bgcolor: 'rgb(0,0,0,0.7)',
+          bgcolor: 'rgb(0,0,0,0.8)',
           color: 'black',
           zIndex: 5,
         }}
@@ -72,8 +72,7 @@ export default function HeroImg() {
               fontSize: { xs: '120%', sm: '150%', md: '200%' },
             }}
           >
-            {' '}
-            We can do everything!
+            Nie ma dla nas rzeczy niemożliwych!
           </Typography>
         </Stack>
       </Box>
