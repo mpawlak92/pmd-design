@@ -5,6 +5,7 @@ import HeroImg from '../HeroImg/HeroImg'
 import Projects from '../Projects/Projects'
 import AboutMe from '../AboutMe/AboutMe'
 import Contact from '../Contact/Contact'
+import Services from '../Services/Services'
 
 export default function Section(props) {
   const { id, name } = props
@@ -23,6 +24,7 @@ export default function Section(props) {
         {name === 'heroImg' && <HeroImg />}
         {name === 'projects' && <Projects />}
         {name === 'about' && <AboutMe />}
+        {name === 'services' && <Services />}
         {name === 'contact' && <Contact />}
       </Box>
     </>
