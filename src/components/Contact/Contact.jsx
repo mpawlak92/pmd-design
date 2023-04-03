@@ -53,8 +53,15 @@ export default function Contact() {
     setMailInputValue('')
     setMessageInputValue('')
   }
+  const cleanSubmitFormInfo = () => {
+    setTimeout(() => {
+      setSubmitMessage(false)
+      setErrorMessage(false)
+    }, 3000)
+  }
   const submitFormInfo = () => {
     if (submitMessage) {
+      cleanSubmitFormInfo()
       return (
         <Box
           sx={{
@@ -69,6 +76,9 @@ export default function Contact() {
             sx={{
               width: '100%',
               textAlign: 'center',
+              fontSize: 22,
+              fontWeight: 700,
+              color: 'success.main',
               mb: { xs: 3, sm: 3 },
             }}
           >
@@ -79,6 +89,7 @@ export default function Contact() {
       )
     }
     if (errorMessage) {
+      cleanSubmitFormInfo()
       return (
         <Box
           sx={{
@@ -93,6 +104,9 @@ export default function Contact() {
             sx={{
               width: '100%',
               textAlign: 'center',
+              fontSize: 22,
+              fontWeight: 700,
+              color: 'error.main',
               mb: { xs: 3, sm: 3 },
             }}
           >
