@@ -41,7 +41,9 @@ function Menu(props) {
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
-            <ListItemButton sx={{ textAlign: 'left' }}>Home</ListItemButton>
+            <ListItemButton sx={{ textAlign: 'left' }}>
+              Strona główna
+            </ListItemButton>
           </ListItem>
         </Link>
 
@@ -54,7 +56,7 @@ function Menu(props) {
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
-            <ListItemButton sx={{ textAlign: 'left' }}>Projects</ListItemButton>
+            <ListItemButton sx={{ textAlign: 'left' }}>Projekty</ListItemButton>
           </ListItem>
         </Link>
 
@@ -67,7 +69,7 @@ function Menu(props) {
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
-            <ListItemButton sx={{ textAlign: 'left' }}>About</ListItemButton>
+            <ListItemButton sx={{ textAlign: 'left' }}>O mnie</ListItemButton>
           </ListItem>
         </Link>
 
@@ -80,7 +82,7 @@ function Menu(props) {
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
-            <ListItemButton sx={{ textAlign: 'left' }}>Contact</ListItemButton>
+            <ListItemButton sx={{ textAlign: 'left' }}>Kontakt</ListItemButton>
           </ListItem>
         </Link>
       </List>
