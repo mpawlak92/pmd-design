@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import {
   Box,
   Card,
@@ -7,12 +9,16 @@ import {
   CardMedia,
   Typography,
 } from '@mui/material'
+
 import projImg1 from '../../img/proj1.jpg'
 import projImg2 from '../../img/proj2.jpg'
 import projImg3 from '../../img/proj3.jpg'
 import projImg4 from '../../img/proj4.jpg'
 
 export default function Services() {
+  useEffect(() => {
+    Aos.init({ duration: 3000 })
+  }, [])
   return (
     <>
       <Box
@@ -26,7 +32,9 @@ export default function Services() {
           pb: { xs: 5, sm: 0 },
         }}
       >
-        <Typography variant="h2">Moje usługi</Typography>
+        <Typography variant="h2" data-aos="fade-in">
+          Moje usługi
+        </Typography>
       </Box>
       <Box
         sx={{
@@ -47,6 +55,7 @@ export default function Services() {
           }}
         >
           <Card
+            data-aos="slide-right"
             sx={{
               width: { xs: '80vw', md: '35vw' },
               alignSelf: 'center',
@@ -73,6 +82,7 @@ export default function Services() {
             </CardActionArea>
           </Card>
           <Card
+            data-aos="slide-left"
             sx={{
               width: { xs: '80vw', md: '35vw' },
               alignSelf: 'center',
@@ -99,6 +109,7 @@ export default function Services() {
             </CardActionArea>
           </Card>
           <Card
+            data-aos="slide-right"
             sx={{
               width: { xs: '80vw', md: '35vw' },
               alignSelf: 'center',
@@ -125,6 +136,7 @@ export default function Services() {
             </CardActionArea>
           </Card>
           <Card
+            data-aos="slide-left"
             sx={{
               width: { xs: '80vw', md: '35vw' },
               alignSelf: 'center',

@@ -1,8 +1,13 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { Button, Box, Grid, TextField, Typography } from '@mui/material'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Contact() {
+  React.useEffect(() => {
+    Aos.init({ duration: 2000 })
+  }, [])
   const [nameInputValue, setNameInputValue] = useState('')
   const [surnameInputValue, setSurnameInputValue] = useState('')
   const [mailInputValue, setMailInputValue] = useState('')
@@ -72,6 +77,7 @@ export default function Contact() {
           }}
         >
           <Typography
+            data-aos="zoom-in-down"
             variant="subtitle1"
             sx={{
               width: '100%',
@@ -127,7 +133,9 @@ export default function Contact() {
           mb: { xs: 5, sm: 0 },
         }}
       >
-        <Typography variant="h2">Kontakt</Typography>
+        <Typography variant="h2" data-aos="fade-in">
+          Kontakt
+        </Typography>
       </Box>
       <Box
         sx={{

@@ -1,9 +1,13 @@
 import * as React from 'react'
-
 import image from '../../img/heroimg.jpg'
 import { Box, Stack, Typography } from '@mui/material'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function HeroImg() {
+  React.useEffect(() => {
+    Aos.init({ duration: 3000 })
+  }, [])
   return (
     <>
       <Box
@@ -18,6 +22,7 @@ export default function HeroImg() {
           backgroundImage: `url(${image})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
           zIndex: 0,
         }}
       />
@@ -59,6 +64,7 @@ export default function HeroImg() {
           spacing={2}
         >
           <Typography
+            data-aos="fade-up"
             variant="h1"
             sx={{
               fontSize: { xs: '300%', sm: '400%', md: '500%' },
@@ -67,6 +73,8 @@ export default function HeroImg() {
             pmd - design
           </Typography>
           <Typography
+            data-aos="fade-up"
+            data-aos-delay="1000"
             variant="h2"
             sx={{
               fontSize: { xs: '120%', sm: '150%', md: '200%' },

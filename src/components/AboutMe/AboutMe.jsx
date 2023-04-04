@@ -1,8 +1,13 @@
 import React from 'react'
 import ownerImg from '../../img/owner.jpg'
 import { Box, Typography } from '@mui/material'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function AboutMe() {
+  React.useEffect(() => {
+    Aos.init({ duration: 3000 })
+  }, [])
   return (
     <>
       <Box
@@ -14,7 +19,9 @@ export default function AboutMe() {
           mb: { xs: 5, sm: 0 },
         }}
       >
-        <Typography variant="h2">O mnie</Typography>
+        <Typography variant="h2" data-aos="fade-in">
+          O mnie
+        </Typography>
       </Box>
       <Box
         sx={{
@@ -26,6 +33,7 @@ export default function AboutMe() {
         }}
       >
         <Box
+          data-aos="slide-right"
           sx={{
             display: 'flex',
             flexDirection: 'column',

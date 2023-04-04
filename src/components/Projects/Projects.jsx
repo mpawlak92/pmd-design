@@ -8,8 +8,13 @@ import projImg6 from '../../img/proj6.jpg'
 import projImg7 from '../../img/proj7.jpg'
 import projImg8 from '../../img/proj8.jpg'
 import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Projects() {
+  React.useEffect(() => {
+    Aos.init({ duration: 3000 })
+  }, [])
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   useEffect(() => {
@@ -91,7 +96,9 @@ export default function Projects() {
           my: { xs: 5, sm: 10 },
         }}
       >
-        <Typography variant="h2">Moje Projekty</Typography>
+        <Typography variant="h2" data-aos="fade-in">
+          Moje Projekty
+        </Typography>
       </Box>
       <Box
         sx={{
