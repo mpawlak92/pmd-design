@@ -34,10 +34,10 @@ export default function Contact() {
     // sending email with emailjs.com
     emailjs
       .sendForm(
-        'service_aut12a8',
-        'template_pn40usl',
+        'service_0308pul',
+        'template_us00a2q',
         form.current,
-        'LtQwMiI0se9a9WQQv'
+        'TNvx6xtLOpKSWVgVu'
       )
       .then(
         (result) => {
