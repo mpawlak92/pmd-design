@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+// import { NavLink } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import {
@@ -64,7 +65,7 @@ export default function Services() {
               mb: { xs: 5, md: 0 },
             }}
           >
-            <CardActionArea href="#">
+            <CardActionArea href="/druk-3d">
               <CardMedia
                 component="img"
                 height="240"
@@ -81,6 +82,7 @@ export default function Services() {
               </CardContent>
             </CardActionArea>
           </Card>
+
           <Card
             data-aos="slide-left"
             sx={{
@@ -100,7 +102,7 @@ export default function Services() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Spawanie metalu i alumienium
+                  Spawanie metalu i aluminium
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Tutaj jest miejsce na krótki opis
