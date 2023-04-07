@@ -6,9 +6,8 @@ function App() {
       <div className="App">
         <Menu />
         <Section id="#" name="heroImg" />
-        <Section id="projects" name="projects" />
         <Section id="about" name="about" />
-        <Section id="servicees" name="services" />
+        <Section id="services" name="services" />
         <Section id="contact" name="contact" />
       </div>
     </>
