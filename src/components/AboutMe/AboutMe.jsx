@@ -20,7 +20,7 @@ export default function AboutMe() {
         }}
       >
         <Typography variant="h2" data-aos="fade-in">
-          O mnie
+          O Nas
         </Typography>
       </Box>
       <Box
@@ -50,7 +50,7 @@ export default function AboutMe() {
               my: { xs: 2, sm: 3 },
             }}
           >
-            Czym dla mnie jest Design?
+            Czym dla nas jest Design?
           </Typography>
           <Typography
             variant="body1"

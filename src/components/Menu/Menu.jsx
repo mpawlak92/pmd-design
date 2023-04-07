@@ -49,19 +49,6 @@ function Menu(props) {
 
         <Link
           activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-56}
-          duration={500}
-        >
-          <ListItem onClick={handleDrawerToggle} disablePadding>
-            <ListItemButton sx={{ textAlign: 'left' }}>Projekty</ListItemButton>
-          </ListItem>
-        </Link>
-
-        <Link
-          activeClass="active"
           to="about"
           spy={true}
           smooth={true}
@@ -72,7 +59,18 @@ function Menu(props) {
             <ListItemButton sx={{ textAlign: 'left' }}>O mnie</ListItemButton>
           </ListItem>
         </Link>
-
+        <Link
+          activeClass="active"
+          to="services"
+          spy={true}
+          smooth={true}
+          offset={-56}
+          duration={500}
+        >
+          <ListItem onClick={handleDrawerToggle} disablePadding>
+            <ListItemButton sx={{ textAlign: 'left' }}>Usługi</ListItemButton>
+          </ListItem>
+        </Link>
         <Link
           activeClass="active"
           to="contact"
@@ -127,17 +125,6 @@ function Menu(props) {
 
             <Link
               activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              <Button sx={{ color: '#000', mx: 1 }}>Projekty</Button>
-            </Link>
-
-            <Link
-              activeClass="active"
               to="about"
               spy={true}
               smooth={true}
@@ -149,10 +136,21 @@ function Menu(props) {
 
             <Link
               activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              offset={15}
+              duration={500}
+            >
+              <Button sx={{ color: '#000', mx: 1 }}>Usługi</Button>
+            </Link>
+
+            <Link
+              activeClass="active"
               to="contact"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={15}
               duration={500}
             >
               <Button sx={{ color: '#000', mx: 1 }}>Kontakt</Button>

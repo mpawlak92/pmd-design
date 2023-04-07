@@ -96,8 +96,8 @@ export default function Projects() {
           my: { xs: 5, sm: 10 },
         }}
       >
-        <Typography variant="h2" data-aos="fade-in">
-          Moje Projekty
+        <Typography variant="h3" data-aos="fade-in">
+          Kilka naszych projektów
         </Typography>
       </Box>
       <Box
