@@ -15,6 +15,10 @@ import projImg1 from '../../img/proj1.jpg'
 import projImg2 from '../../img/proj2.jpg'
 import projImg3 from '../../img/proj3.jpg'
 import projImg4 from '../../img/proj4.jpg'
+import { Link } from 'react-router-dom'
+
+import './Services.scss'
+import Section from '../Section/Section'
 
 export default function Services() {
   useEffect(() => {
@@ -34,7 +38,7 @@ export default function Services() {
         }}
       >
         <Typography variant="h2" data-aos="fade-in">
-          Moje usługi
+          Nasze usługi
         </Typography>
       </Box>
       <Box
@@ -65,7 +69,7 @@ export default function Services() {
               mb: { xs: 5, md: 0 },
             }}
           >
-            <CardActionArea href="/druk-3d">
+            <Link className="card-link" to="/druk-3d">
               <CardMedia
                 component="img"
                 height="240"
@@ -80,7 +84,7 @@ export default function Services() {
                   Tutaj jest miejsce na krótki opis
                 </Typography>
               </CardContent>
-            </CardActionArea>
+            </Link>
           </Card>
 
           <Card
@@ -166,6 +170,7 @@ export default function Services() {
           </Card>
         </Box>
       </Box>
+      <Section id="services" name="projects" />
     </>
   )
 }
