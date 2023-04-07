@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import projImg1 from '../../img/proj1.jpg'
 import projImg2 from '../../img/proj2.jpg'
 import projImg3 from '../../img/proj3.jpg'
@@ -23,8 +23,12 @@ import { useNavigate } from 'react-router-dom'
 import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 
+// import { Link } from 'react-scroll'
 export default function Print() {
-  React.useEffect(() => {
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, [])
+  useEffect(() => {
     Aos.init({ duration: 3000 })
   }, [])
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
@@ -118,7 +122,7 @@ export default function Print() {
             top: '0',
             left: '0',
             width: '100%',
-            height: '100%',
+            height: { xs: 'calc(100% - 4px)', lg: '100%' },
             backgroundColor: alpha('#000', 0.6),
           }}
         ></Box>
@@ -184,7 +188,7 @@ export default function Print() {
             my: { xs: 2, sm: 3 },
           }}
         >
-          Czym dla mnie jest Design?
+          Druk 3D. Jak to robimy?
         </Typography>
         <Typography
           variant="body1"
