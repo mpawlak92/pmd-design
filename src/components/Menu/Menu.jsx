@@ -52,7 +52,7 @@ function Menu(props) {
           to="about"
           spy={true}
           smooth={true}
-          offset={-56}
+          offset={-50}
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
@@ -64,7 +64,7 @@ function Menu(props) {
           to="services"
           spy={true}
           smooth={true}
-          offset={-56}
+          offset={-280}
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
@@ -76,7 +76,7 @@ function Menu(props) {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-56}
+          offset={15}
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>

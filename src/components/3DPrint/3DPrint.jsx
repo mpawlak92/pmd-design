@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react'
-import projImg1 from '../../img/proj1.jpg'
-import projImg2 from '../../img/proj2.jpg'
-import projImg3 from '../../img/proj3.jpg'
-import projImg4 from '../../img/proj4.jpg'
-import projImg5 from '../../img/proj5.jpg'
-import projImg6 from '../../img/proj6.jpg'
-import projImg7 from '../../img/proj7.jpg'
-import projImg8 from '../../img/proj8.jpg'
-import videoBg from '../../assets/videoBg.mp4'
+import printImg1 from '../../assets/3d/f1.jpg'
+import printImg2 from '../../assets/3d/f2.jpg'
+import printImg3 from '../../assets/3d/f3.jpg'
+import printImg4 from '../../assets/3d/f4.jpg'
+import printImg5 from '../../assets/3d/f5.jpg'
+import printImg6 from '../../assets/3d/f6.jpg'
+import printImg7 from '../../assets/3d/f7.jpg'
+import videoBg from '../../assets/aluminum_welding/aluminum_video.mp4'
 import {
   Box,
   ImageList,
@@ -42,7 +41,7 @@ export default function Print() {
   const projectsGallery = () => {
     if (windowWidth <= 600) {
       return (
-        <ImageList sx={{ width: '90%' }} variant="woven" cols={1} gap={0}>
+        <ImageList sx={{ width: '90%' }} variant="masonry" cols={1} gap={0}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -57,7 +56,7 @@ export default function Print() {
       )
     } else if (windowWidth > 600 && windowWidth <= 900) {
       return (
-        <ImageList sx={{ width: '90%' }} variant="woven" cols={2} gap={50}>
+        <ImageList sx={{ width: '90%' }} variant="masonry" cols={2} gap={50}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -72,7 +71,7 @@ export default function Print() {
       )
     } else if (windowWidth > 900 && windowWidth <= 1200) {
       return (
-        <ImageList sx={{ width: '90%' }} variant="woven" cols={3} gap={50}>
+        <ImageList sx={{ width: '90%' }} variant="masonry" cols={3} gap={50}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -87,7 +86,7 @@ export default function Print() {
       )
     } else if (windowWidth > 1200) {
       return (
-        <ImageList sx={{ width: '90%' }} variant="woven" cols={4} gap={70}>
+        <ImageList sx={{ width: '90%' }} variant="masonry" cols={3} gap={70}>
           {itemData.map((item) => (
             <ImageListItem key={item.img}>
               <img
@@ -217,35 +216,31 @@ export default function Print() {
 }
 const itemData = [
   {
-    img: `${projImg1}`,
+    img: `${printImg1}`,
     title: 'Bed',
   },
   {
-    img: `${projImg2}`,
+    img: `${printImg2}`,
     title: 'Kitchen',
   },
   {
-    img: `${projImg3}`,
+    img: `${printImg3}`,
     title: 'Sink',
   },
   {
-    img: `${projImg4}`,
+    img: `${printImg4}`,
     title: 'Books',
   },
   {
-    img: `${projImg5}`,
+    img: `${printImg5}`,
     title: 'Chairs',
   },
   {
-    img: `${projImg6}`,
+    img: `${printImg6}`,
     title: 'Candle',
   },
   {
-    img: `${projImg7}`,
+    img: `${printImg7}`,
     title: 'Laptop',
-  },
-  {
-    img: `${projImg8}`,
-    title: 'Doors',
   },
 ]

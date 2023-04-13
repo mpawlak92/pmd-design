@@ -1,5 +1,5 @@
 import * as React from 'react'
-import image from '../../img/heroimg.jpg'
+import image from '../../assets/heroimg.jpg'
 import { Box, Stack, Typography } from '@mui/material'
 import Aos from 'aos'
 import 'aos/dist/aos.css'

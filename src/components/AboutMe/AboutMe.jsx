@@ -1,5 +1,5 @@
 import React from 'react'
-import ownerImg from '../../img/owner.jpg'
+import ownerImg from '../../assets/owner.jpg'
 import { Box, Typography } from '@mui/material'
 import Aos from 'aos'
 import 'aos/dist/aos.css'

@@ -15,6 +15,12 @@ export default function Contact() {
   const [submitMessage, setSubmitMessage] = useState(false)
   const [errorMessage, setErrorMessage] = useState(false)
 
+  const [errors, setErrors] = useState([])
+  const [nameError, setNameError] = useState(false)
+  const [surnameError, setSurnameError] = useState(false)
+  const [mailError, setMailError] = useState(false)
+  const [textError, setTextError] = useState(false)
+
   const form = useRef()
   const handleInput = (e) => {
     const fieldType = e.target.id
@@ -31,26 +37,70 @@ export default function Contact() {
   }
   const handleSubmitForm = (e) => {
     e.preventDefault()
-    // sending email with emailjs.com
-    emailjs
-      .sendForm(
-        'service_0308pul',
-        'template_us00a2q',
-        form.current,
-        'TNvx6xtLOpKSWVgVu'
-      )
-      .then(
-        (result) => {
-          if (result.status === 200) {
-            setSubmitMessage(true)
+
+    const errors = []
+
+    // Validate name field
+    if (!nameInputValue) {
+      errors.push('Pole imię jest wmagane.')
+      setNameError(true)
+    } else {
+      setNameError(false)
+    }
+
+    // Validate surname field
+    if (!surnameInputValue) {
+      errors.push('Pole nazwisko jest wymagane.')
+      setSurnameError(true)
+    } else {
+      setSurnameError(false)
+    }
+
+    // Validate email field
+    if (!mailInputValue) {
+      errors.push('Podaj swój adres email.')
+      setMailError(true)
+    } else if (!/\S+@\S+\.\S+/.test(mailInputValue)) {
+      errors.push('Adres email jest nieprawidłowy.')
+      setMailError(true)
+    } else {
+      setMailError(false)
+    }
+
+    // Validate message field
+    if (!messageInputValue) {
+      errors.push('Wpisz wiadomość.')
+      setTextError(true)
+    } else {
+      setTextError(false)
+    }
+
+    // Set errors and show them if there are any
+    setErrors(errors)
+    if (errors.length > 0) {
+      return
+    } else {
+      // sending email with emailjs.com
+      emailjs
+        .sendForm(
+          'service_0308pul',
+          'template_us00a2q',
+          form.current,
+          'TNvx6xtLOpKSWVgVu'
+        )
+        .then(
+          (result) => {
+            if (result.status === 200) {
+              setSubmitMessage(true)
+            }
+          },
+          (error) => {
+            if (error.status === 400) {
+              setErrorMessage(true)
+            }
           }
-        },
-        (error) => {
-          if (error.status === 400) {
-            setErrorMessage(true)
-          }
-        }
-      )
+        )
+    }
 
     // reset all formfields
     setNameInputValue('')
@@ -168,7 +218,7 @@ export default function Contact() {
                 sx={{
                   width: '100%',
                 }}
-                //   error
+                error={nameError}
                 id="name"
                 name="name"
                 label="Imię"
@@ -181,7 +231,7 @@ export default function Contact() {
                 sx={{
                   width: '100%',
                 }}
-                //   error
+                error={surnameError}
                 id="surname"
                 name="surname"
                 label="Nazwisko"
@@ -194,7 +244,7 @@ export default function Contact() {
                 sx={{
                   width: '100%',
                 }}
-                //   error
+                error={mailError}
                 id="email"
                 name="mail"
                 label="Email"
@@ -207,6 +257,7 @@ export default function Contact() {
                 sx={{
                   width: '100%',
                 }}
+                error={textError}
                 id="message"
                 name="message"
                 label="Wiadomość"
@@ -216,6 +267,23 @@ export default function Contact() {
                 onChange={handleInput}
               />
             </Grid>
+            {errors.length > 0 && (
+              <Grid
+                xs={12}
+                item
+                sx={{
+                  textAlign: 'center',
+                  my: 2,
+                }}
+              >
+                {errors.map((error, index) => (
+                  <div key={index} style={{ color: 'red', marginBottom: 4 }}>
+                    {error}
+                  </div>
+                ))}
+              </Grid>
+            )}
+
             <Grid xs={6} md={4} item>
               <Button
                 variant="outlined"

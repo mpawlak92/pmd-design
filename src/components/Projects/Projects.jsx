@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import projImg1 from '../../img/proj1.jpg'
-import projImg2 from '../../img/proj2.jpg'
-import projImg3 from '../../img/proj3.jpg'
-import projImg4 from '../../img/proj4.jpg'
-import projImg5 from '../../img/proj5.jpg'
-import projImg6 from '../../img/proj6.jpg'
-import projImg7 from '../../img/proj7.jpg'
-import projImg8 from '../../img/proj8.jpg'
+import projImg1 from '../../assets/services_gallery/proj1.jpg'
+import projImg2 from '../../assets/services_gallery/proj2.jpg'
+import projImg3 from '../../assets/services_gallery/proj3.jpg'
+import projImg4 from '../../assets/services_gallery/proj4.jpg'
+import projImg5 from '../../assets/services_gallery/proj5.jpg'
+import projImg6 from '../../assets/services_gallery/proj6.jpg'
+import projImg7 from '../../assets/services_gallery/proj7.jpg'
+import projImg8 from '../../assets/services_gallery/proj8.jpg'
 import { Box, ImageList, ImageListItem, Typography } from '@mui/material'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -96,7 +96,11 @@ export default function Projects() {
           my: { xs: 5, sm: 10 },
         }}
       >
-        <Typography variant="h3" data-aos="fade-in">
+        <Typography
+          variant="h3"
+          data-aos="fade-in"
+          sx={{ textAlign: 'center' }}
+        >
           Kilka naszych projektów
         </Typography>
       </Box>

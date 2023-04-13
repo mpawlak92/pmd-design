@@ -2,19 +2,12 @@ import React, { useEffect } from 'react'
 // import { NavLink } from 'react-router-dom'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import {
-  Box,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Typography,
-} from '@mui/material'
+import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material'
 
-import projImg1 from '../../img/proj1.jpg'
-import projImg2 from '../../img/proj2.jpg'
-import projImg3 from '../../img/proj3.jpg'
-import projImg4 from '../../img/proj4.jpg'
+import woodCover from '../../assets/wood/wood_cover.jpg'
+import metalCover from '../../assets/aluminum_welding/aluminium_cover.jpg'
+import plasticCover from '../../assets/plastic_welding/plastic_cover.jpg'
+import print3dCover from '../../assets/3d/3d_printing_cover.jpg'
 import { Link } from 'react-router-dom'
 
 import './Services.scss'
@@ -73,7 +66,7 @@ export default function Services() {
               <CardMedia
                 component="img"
                 height="240"
-                image={projImg2}
+                image={print3dCover}
                 alt="Druk 3D"
               />
               <CardContent>
@@ -97,23 +90,24 @@ export default function Services() {
               mb: { xs: 5, md: 0 },
             }}
           >
-            <CardActionArea href="#">
+            <Link className="card-link" to="/iron-welding">
               <CardMedia
                 component="img"
                 height="240"
-                image={projImg3}
+                image={metalCover}
                 alt="Spawanie metalu i alumienium "
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Spawanie metalu i aluminium
+                  Spawanie stali i aluminium
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   Tutaj jest miejsce na krótki opis
                 </Typography>
               </CardContent>
-            </CardActionArea>
+            </Link>
           </Card>
+
           <Card
             data-aos="slide-right"
             sx={{
@@ -124,11 +118,11 @@ export default function Services() {
               mb: { xs: 5, md: 0 },
             }}
           >
-            <CardActionArea href="#">
+            <Link className="card-link" to="/plastic-welding">
               <CardMedia
                 component="img"
                 height="240"
-                image={projImg1}
+                image={plasticCover}
                 alt="Spawanie plastiku"
               />
               <CardContent>
@@ -139,8 +133,9 @@ export default function Services() {
                   Tutaj jest miejsce na krótki opis
                 </Typography>
               </CardContent>
-            </CardActionArea>
+            </Link>
           </Card>
+
           <Card
             data-aos="slide-left"
             sx={{
@@ -151,11 +146,11 @@ export default function Services() {
               mb: { xs: 5, md: 0 },
             }}
           >
-            <CardActionArea href="#">
+            <Link className="card-link" to="/wood">
               <CardMedia
                 component="img"
                 height="240"
-                image={projImg4}
+                image={woodCover}
                 alt="Prace w drewnie"
               />
               <CardContent>
@@ -166,7 +161,7 @@ export default function Services() {
                   Tutaj jest miejsce na krótki opis
                 </Typography>
               </CardContent>
-            </CardActionArea>
+            </Link>
           </Card>
         </Box>
       </Box>
