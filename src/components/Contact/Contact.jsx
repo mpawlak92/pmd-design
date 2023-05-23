@@ -179,7 +179,7 @@ export default function Contact() {
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
-          mt: { xs: 5, sm: 10 },
+          mt: { xs: 10, sm: 15 },
           mb: { xs: 5, sm: 0 },
         }}
       >

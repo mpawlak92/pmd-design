@@ -25,7 +25,7 @@ export default function Services() {
           justifyContent: 'center',
           width: '100%',
           backgroundColor: '#fcf3ea',
-          mt: { xs: 5, sm: 10 },
+          mt: { xs: 7, sm: 10 },
           pt: { xs: 2, sm: 4 },
           pb: { xs: 5, sm: 0 },
         }}
@@ -74,7 +74,8 @@ export default function Services() {
                   Druk 3D
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Tutaj jest miejsce na krótki opis
+                  Druk 3D jest jak zaczarowany ołówek z bajki. Narysuj model,
+                  drukuj i już!
                 </Typography>
               </CardContent>
             </Link>
@@ -99,10 +100,11 @@ export default function Services() {
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Spawanie stali i aluminium
+                  Obróbka stali
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Tutaj jest miejsce na krótki opis
+                  Metal ciekawie łaczy się z innymi materiałami takimi jak
+                  drewno czy tworzywa sztuczne...
                 </Typography>
               </CardContent>
             </Link>
@@ -130,7 +132,8 @@ export default function Services() {
                   Spawanie plastiku
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Tutaj jest miejsce na krótki opis
+                  Spawanie plastiku często jest problematyczne jednak sporą
+                  praktyka potrafi to zmienić.
                 </Typography>
               </CardContent>
             </Link>
@@ -158,7 +161,8 @@ export default function Services() {
                   Prace w drewnie
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                  Tutaj jest miejsce na krótki opis
+                  Każdy kto miał okazję być w warsztacie stolarskim nie zapomni
+                  zapachu obróbki drewna a to zapach mojego dzieciństwa...
                 </Typography>
               </CardContent>
             </Link>

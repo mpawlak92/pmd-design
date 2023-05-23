@@ -12,9 +12,9 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
-import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import './Menu.scss'
+import { Avatar } from '@mui/material'
 
 const drawerWidth = 300
 function Menu(props) {
@@ -27,9 +27,28 @@ function Menu(props) {
 
   const drawer = (
     <Box sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        PMD-Design
-      </Typography>
+      <Link
+        activeClass="active"
+        to="#"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+      >
+        <Avatar
+          alt="Remy Sharp"
+          src="logo/PMD_logo.svg"
+          sx={{
+            width: 80,
+            height: 80,
+            cursor: 'pointer',
+            marginRight: { xs: 'auto' },
+            marginLeft: { xs: 'auto' },
+          }}
+          onClick={handleDrawerToggle}
+        />
+      </Link>
+
       <Divider />
       <List>
         <Link
@@ -52,7 +71,7 @@ function Menu(props) {
           to="about"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={0}
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
@@ -64,7 +83,7 @@ function Menu(props) {
           to="services"
           spy={true}
           smooth={true}
-          offset={-280}
+          offset={0}
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
@@ -76,7 +95,7 @@ function Menu(props) {
           to="contact"
           spy={true}
           smooth={true}
-          offset={15}
+          offset={0}
           duration={500}
         >
           <ListItem onClick={handleDrawerToggle} disablePadding>
@@ -104,13 +123,28 @@ function Menu(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
+          <Box
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', sm: 'block' },
+            }}
           >
-            PMD
-          </Typography>
+            <Link
+              activeClass="active"
+              to="#"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              <Avatar
+                alt="Remy Sharp"
+                src="logo/PMD_logo.svg"
+                sx={{ width: 80, height: 80, cursor: 'pointer' }}
+              />
+            </Link>
+          </Box>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Link
               activeClass="active"

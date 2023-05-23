@@ -196,9 +196,12 @@ export default function Print() {
             mb: { xs: 2, sm: 3 },
           }}
         >
-          I’m a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
+          Druk 3D jest jak zaczarowany ołówek z bajki. Narysuj model, drukuj i
+          już. Ogranicza nas tylko wyobraźnia. Paleta filamentów (tworzywo z
+          którego drukuje się model) zwiększa się z miesiąca na miesiąc. Pozwala
+          to maksymalnie dobrać materiał do potrzeb danego projektu.
+          Potrzebujesz madki, części do swojego auta, podstawki do modelu
+          samolotu? rzaden problem, wydrukowac można dosłownie wszsytko!
         </Typography>
       </Box>
       <Box

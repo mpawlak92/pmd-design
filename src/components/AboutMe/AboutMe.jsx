@@ -15,7 +15,7 @@ export default function AboutMe() {
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
-          mt: { xs: 5, sm: 10 },
+          mt: { xs: 10, sm: 15 },
           mb: { xs: 5, sm: 0 },
         }}
       >
@@ -59,9 +59,11 @@ export default function AboutMe() {
               mb: { xs: 2, sm: 3 },
             }}
           >
-            I’m a paragraph. Click here to add your own text and edit me. It’s
-            easy. Just click “Edit Text” or double click me to add your own
-            content and make changes to the font.
+            Design jest dla nas Twoim pomysłem zamienionym w rzeczywistość.
+            Dzięki ogromowi możliwości obrabiania wielu materiałów takich jak
+            metal, drewno czy tworzywa sztuczne, mogę Twoje wyobrażenie przekuć
+            w rzeczywistość. Można więc powiedzieć że design jest sztuką
+            dostosowywania świata do naszych potrzeb.
           </Typography>
         </Box>
 

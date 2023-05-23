@@ -200,9 +200,16 @@ export default function Wood() {
             mb: { xs: 2, sm: 3 },
           }}
         >
-          I’m a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
+          Prace w drewnie mam we krwi. Całe życie mieszkam w Swarzędzu który
+          słynął ze swoich mebli. Mój dziadek jest stolarzem (prawdziwym
+          stolarzem a nie osoba skręcająca płyty z laminatu). Każdy kto miał
+          okazję być w warsztacie stolarskim nie zapomni zapachu obróbki drewna
+          a to zapach mojego dzieciństwa. Od najmłodszych lat miałem swój mały
+          stół warsztatowy i małe narzędzia a w głowie do dziś pouczenia że
+          stylu cała piła jest zapłacona więc tniemy całą długością albo że klej
+          który wypływa i tak nie trzyma. Dzisiaj obróbka wygląda trochę inaczej
+          ale wiedzą o obróbce narzędziami ręcznymi pomaga zrozumieć działanie
+          elektronarzędziam.
         </Typography>
       </Box>
       <Box

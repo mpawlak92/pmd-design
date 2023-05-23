@@ -199,9 +199,13 @@ export default function PlasticWelding() {
             mb: { xs: 2, sm: 3 },
           }}
         >
-          I’m a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
+          Spawanie plastiku często jest problematyczne jednak sporą praktyka
+          potrafi to zmienić. Naprawa takich elementów jak np. zderzaki czy
+          owiewki motocyklowe to nie wszystko. Płyty z tworzywa można łączyć np
+          w zbiorniki na wodę lub wykorzystywać w innych projektach.
+          Wielokrotnie zdarzało mi się przerabiać elementy takie jak zderzaki
+          pod potrzeby tuningu likwidacja listew i wygładzanie, powiększanie
+          miejsca na wylot spalin czy zmiana tzn. grilla.
         </Typography>
       </Box>
       <Box

@@ -189,7 +189,7 @@ export default function IronWelding() {
             my: { xs: 2, sm: 3 },
           }}
         >
-          Spawanie stali i aluminium. Jak to robimy?
+          Obróbka stali. Jak to robimy?
         </Typography>
         <Typography
           variant="body1"
@@ -198,9 +198,11 @@ export default function IronWelding() {
             mb: { xs: 2, sm: 3 },
           }}
         >
-          I’m a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
+          Metal ciekawie łączy się z innymi materiałami takimi jak drewno czy
+          tworzywa sztuczne. Często wykorzystuje się go w konstrukcjach mocno
+          obciążonych jednak ma też wiele innych walorów takich jak odporność na
+          wysoką temperaturę itd. Jednak do jego obróbki wymagane są odpowiednie
+          narzędzia i umiejętności którymi dysponuje.
         </Typography>
       </Box>
       <Box

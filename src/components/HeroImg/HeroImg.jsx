@@ -62,22 +62,29 @@ export default function HeroImg() {
           justifyContent="center"
           alignItems="center"
           spacing={2}
+          sx={{
+            padding: 2,
+          }}
         >
-          <Typography
+          <Box
             data-aos="fade-up"
-            variant="h1"
+            component="img"
             sx={{
-              fontSize: { xs: '300%', sm: '400%', md: '500%' },
+              objectFit: 'contain',
+              mt: -15,
             }}
-          >
-            pmd - design
-          </Typography>
+            alt="Krzysztof (website owner photo)."
+            src="logo/PMD_logo_biale.svg"
+          />
+
           <Typography
             data-aos="fade-up"
             data-aos-delay="1000"
             variant="h2"
             sx={{
               fontSize: { xs: '120%', sm: '150%', md: '200%' },
+              textAlign: 'center',
+              fontFamily: 'Roboto',
             }}
           >
             Nie ma dla nas rzeczy niemożliwych!
