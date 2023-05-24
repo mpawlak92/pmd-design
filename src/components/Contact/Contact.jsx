@@ -179,14 +179,27 @@ export default function Contact() {
           display: 'flex',
           justifyContent: 'center',
           width: '100%',
-          mt: { xs: 10, sm: 15 },
-          mb: { xs: 5, sm: 0 },
+          pt: { xs: 10, sm: 18 },
+          pb: { xs: 5, sm: 0 },
+          mt: 2,
         }}
       >
         <Typography variant="h2" data-aos="fade-in">
           Kontakt
         </Typography>
       </Box>
+      <Box
+        data-aos="fade-up"
+        component="img"
+        sx={{
+          maxWidth: 550,
+          objectFit: 'contain',
+          mt: -10,
+          mb: -15,
+        }}
+        alt="Krzysztof (website owner photo)."
+        src="logo/PMD_logo_kolor.svg"
+      />
       <Box
         sx={{
           display: 'flex',
@@ -208,7 +221,7 @@ export default function Contact() {
           display: 'flex',
           justifyContent: 'center',
           width: '90%',
-          mb: 8,
+          mb: 15,
         }}
       >
         <form ref={form} onSubmit={handleSubmitForm}>

@@ -173,7 +173,7 @@ function Menu(props) {
               to="services"
               spy={true}
               smooth={true}
-              offset={15}
+              offset={0}
               duration={500}
             >
               <Button sx={{ color: '#000', mx: 1 }}>Usługi</Button>
@@ -184,7 +184,7 @@ function Menu(props) {
               to="contact"
               spy={true}
               smooth={true}
-              offset={15}
+              offset={0}
               duration={500}
             >
               <Button sx={{ color: '#000', mx: 1 }}>Kontakt</Button>
