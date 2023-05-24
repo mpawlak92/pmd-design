@@ -4,6 +4,7 @@ import App from '../App'
 import IronWelding from '../components/IronWelding/IronWelding'
 import Wood from '../components/Wood/Wood'
 import PlasticWelding from '../components/PlasticWelding/PlasticWelding'
+import NotFound from '../components/NotFound/NotFound'
 
 const Routing = () => {
   return (
@@ -14,6 +15,7 @@ const Routing = () => {
         <Route path="/iron-welding" element={<IronWelding />} />
         <Route path="/wood" element={<Wood />} />
         <Route path="/plastic-welding" element={<PlasticWelding />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
   )
