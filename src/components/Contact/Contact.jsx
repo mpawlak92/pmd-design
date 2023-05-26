@@ -194,12 +194,24 @@ export default function Contact() {
         sx={{
           maxWidth: 550,
           objectFit: 'contain',
-          mt: { xs: -15, sm: -10 },
+          mt: -10,
           mb: { xs: -10, sm: -15 },
         }}
         alt="PMD design logo"
         src="logo/PMD_logo_kolor.svg"
       />
+      <Typography
+        variant="h5"
+        data-aos="fade-in"
+        sx={{
+          width: '100%',
+          mt: -5,
+          mb: { xs: -5, sm: -15 },
+          textAlign: 'center',
+        }}
+      >
+        Tel: <a href="tel: +48669-018-378">669 018 378</a>
+      </Typography>
       <Box
         sx={{
           display: 'flex',
