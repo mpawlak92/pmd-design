@@ -196,6 +196,7 @@ export default function Contact() {
           objectFit: 'contain',
           mt: -10,
           mb: { xs: -10, sm: -15 },
+          zIndex: 1,
         }}
         alt="PMD design logo"
         src="logo/PMD_logo_kolor.svg"
@@ -208,7 +209,8 @@ export default function Contact() {
           mt: -5,
           mb: { xs: -5, sm: -15 },
           textAlign: 'center',
-        }}
+          zIndex: 10,
+        }} 
       >
         Tel: <a href="tel: +48669-018-378">669 018 378</a>
       </Typography>
