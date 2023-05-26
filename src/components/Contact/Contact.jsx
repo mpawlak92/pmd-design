@@ -189,15 +189,15 @@ export default function Contact() {
         </Typography>
       </Box>
       <Box
-        data-aos="fade-up"
+        data-aos="slide-right"
         component="img"
         sx={{
           maxWidth: 550,
           objectFit: 'contain',
-          mt: -10,
-          mb: -15,
+          mt: { xs: -15, sm: -10 },
+          mb: { xs: -10, sm: -15 },
         }}
-        alt="Krzysztof (website owner photo)."
+        alt="PMD design logo"
         src="logo/PMD_logo_kolor.svg"
       />
       <Box

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Button, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Grid'
 import imgNotFound from '../../assets/404.png'
