@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser'
+import axios from 'axios'
 import { Button, Box, Grid, TextField, Typography } from '@mui/material'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -81,25 +82,32 @@ export default function Contact() {
       return
     } else {
       // sending email with emailjs.com
-      emailjs
-        .sendForm(
-          'service_0308pul',
-          'template_us00a2q',
-          form.current,
-          'TNvx6xtLOpKSWVgVu'
-        )
-        .then(
-          (result) => {
-            if (result.status === 200) {
-              setSubmitMessage(true)
-            }
-          },
-          (error) => {
-            if (error.status === 400) {
-              setErrorMessage(true)
-            }
-          }
-        )
+      // emailjs
+      //   .sendForm(
+      //     'service_0308pul',
+      //     'template_us00a2q',
+      //     form.current,
+      //     'TNvx6xtLOpKSWVgVu'
+      //   )
+      //   .then(
+      //     (result) => {
+      //       if (result.status === 200) {
+      //         setSubmitMessage(true)
+      //       }
+      //     },
+      //     (error) => {
+      //       if (error.status === 400) {
+      //         setErrorMessage(true)
+      //       }
+      //     }
+      //   )
+      let data = {
+        subject: 'Wiadomość ze strony',
+        sender: nameInputValue + surnameInputValue,
+        message: messageInputValue,
+        email: mailInputValue,
+      }
+      axios.post('https://pmd-design.pl/mail.php', data)
     }
 
     // reset all formfields
@@ -201,19 +209,20 @@ export default function Contact() {
         alt="PMD design logo"
         src="logo/PMD_logo_kolor.svg"
       />
-      <Typography
-        variant="h5"
+      <Box
         data-aos="fade-in"
         sx={{
           width: '100%',
-          mt: -5,
-          mb: { xs: -5, sm: -15 },
+          mt: -3,
+          mb: 2,
+          fontSize: 24,
+
           textAlign: 'center',
           zIndex: 10,
-        }} 
+        }}
       >
         Tel: <a href="tel: +48669-018-378">669 018 378</a>
-      </Typography>
+      </Box>
       <Box
         sx={{
           display: 'flex',
@@ -235,7 +244,7 @@ export default function Contact() {
           display: 'flex',
           justifyContent: 'center',
           width: '90%',
-          mb: 15,
+          mb: 8,
         }}
       >
         <form ref={form} onSubmit={handleSubmitForm}>

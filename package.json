@@ -14,6 +14,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.4.0",
     "eslint-plugin-prettier": "^4.2.1",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
@@ -30,8 +31,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint":"eslint src/**/*.js",
-    "lint-fix":"eslint src/**/*.js --fix"
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --fix"
   },
   "eslintConfig": {
     "extends": [
